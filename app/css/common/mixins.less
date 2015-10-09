@@ -1,0 +1,37 @@
+/* MIXINS */
+
+
+
+.gray {
+  -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+.nogray {
+-webkit-filter: grayscale(0%) !important;
+-moz-filter: grayscale(0%) !important;
+-ms-filter: grayscale(0%) !important;
+-o-filter: grayscale(0%) !important;
+filter: grayscale(0%) !important;
+border: 3px solid #7f7f7f !important;
+}
+
+
+
+.clearfix {
+  *zoom: ~"expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif')";
+  zoom: 1 !ie;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+

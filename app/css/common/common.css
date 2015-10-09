@@ -1,0 +1,22 @@
+.wpbx {
+  height: 100px;
+  width: 100px;
+  border-radius: 50% 50%;
+  margin: 0 10px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.wpbx:hover {
+  border: 3px solid red;
+}
+.container_bxpager-a-img {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}
+#container_bxpager {
+  text-align: center;
+}
